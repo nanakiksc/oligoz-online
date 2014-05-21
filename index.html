@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/main.css" type="text/css">
+  </head>
+  <body>
+    <h1>Oligoz</h1>
+    <form method="post">
+      
+      <textarea name="fasta" rows="8" cols="40"
+          placeholder="Enter your fasta sequence/s"></textarea>
+
+      <br>
+      extraL
+      <textarea name="extraL" rows="1" cols="10"></textarea>
+      extraR
+      <textarea name="extraR" rows="1" cols="10"></textarea>
+      <br>
+      approx
+      <input type="checkbox" name="approx" value="True">
+      allpairs
+      <input type="checkbox" name="allpairs" value="True">
+
+      <br>
+      <input type="submit" value="Get oligos!">
+
+    </form>
+
+    <div>
+      <pre>
+        {{ oligos }}
+      </pre>
+    </div>
+
+  </body>
+</html>
